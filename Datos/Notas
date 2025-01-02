@@ -1,0 +1,4 @@
+git init
+git add .
+git commit -m "Agrega archivo de texto .py en la carpeta Datos"
+git push origin main
