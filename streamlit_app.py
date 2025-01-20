@@ -1,11 +1,4 @@
 import streamlit as st
-
-
-st.title('Hola')
-st.write('¡Hola, actualización 3!')
-
-
-import streamlit as st
 import pandas as pd
 import plotly.express as px
 
