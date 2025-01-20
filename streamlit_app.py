@@ -55,5 +55,3 @@ fig = px.histogram(df, x='continent', y=col_chosen, histfunc='avg')
 st.plotly_chart(fig)
 
 
-streamlit run app.py
-
