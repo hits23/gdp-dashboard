@@ -1,0 +1,19 @@
+name: Empty Commit
+on:
+  schedule:
+    - cron: '0 10 * * *'  
+    - cron: '0 22 * * *'  
+
+jobs:
+  commit:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+      - name: Create empty commit
+        run: |
+          git config --global user.name 'github-actions'
+          git config --global user.email 'github-actions@github.com'
+          git commit --allow-empty -m "Manteniendo la aplicación activa"
+      - name: Push changes
+        run: git push
